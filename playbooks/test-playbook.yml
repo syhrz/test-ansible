@@ -1,0 +1,8 @@
+---
+- hosts: 127.0.0.1
+  gather_facts: yes
+  vars_files:
+    - ../group_vars/all
+  tasks:
+    - name: wrong variable
+      debug: var={{ var_a }}
