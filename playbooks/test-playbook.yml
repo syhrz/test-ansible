@@ -1,5 +1,5 @@
 ---
-- hosts: tag_cluster_Environment_Staging
+- hosts: tag_Environment_Staging
   tasks:
     - name: wrong variable
       debug: var={{ var_a }}
